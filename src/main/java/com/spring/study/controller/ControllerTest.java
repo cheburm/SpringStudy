@@ -18,7 +18,7 @@ public class ControllerTest {
 	
 	@RequestMapping(value = "/index2", method = RequestMethod.GET)
 	public ModelAndView index2(@RequestParam("phone")String phonNumber) {
-		ModelAndView mav = new ModelAndView("index/index");
+		ModelAndView mav = new ModelAndView("index/index2");
 		System.out.println(phonNumber);
 		mav.addObject("name","채범");
 		return mav;
